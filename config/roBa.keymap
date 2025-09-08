@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -91,7 +92,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -101,10 +104,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_WIN ESCAPE     &kp W              &kp E          &kp R         &kp T                                               &kp Y        &kp U  &kp I  &kp O              &kp MINUS
-&kp A                   &kp S              &kp D          &kp F         &kp G        &kp LS(LG(S))         &lt 6 SEMICOLON  &kp H        &kp J  &kp K  &kp L              &kp P
-&mt LEFT_SHIFT X        &kp Z              &kp C          &kp V         &kp B        &kp Q                 &kp COMMA        &kp PERIOD   &kp N  &kp M  &kp K_APPLICATION  &kp BACKSPACE
-&mt LCTRL LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LEFT_ALT  &lt 5 SPACE  &mt LEFT_WIN F10      &kp EQUAL        &lt 2 ENTER                                   &lt 5 SLASH
+&mt LEFT_WIN ESCAPE     &kp W              &kp E          &kp R         &kp T                                                  &kp Y        &kp U  &kp I  &kp O              &kp MINUS
+&kp A                   &kp S              &kp D          &kp F         &kp G        &kp LS(LG(S))         &lt 6 SEMICOLON     &kp H        &kp J  &kp K  &kp L              &kp P
+&mt LEFT_SHIFT X        &kp Z              &kp C          &kp V         &kp B        &kp Q                 &kp COMMA           &kp PERIOD   &kp N  &kp M  &kp K_APPLICATION  &kp BACKSPACE
+&mt LCTRL LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LEFT_ALT  &lt 5 SPACE  &mt LEFT_WIN F10      &mt LEFT_WIN EQUAL  &lt 2 ENTER                                   &lt 5 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
