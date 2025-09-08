@@ -123,7 +123,7 @@
             bindings = <
 &kp LA(GRAVE)    &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp LG(LS(RIGHT_ARROW))                                     &trans         &trans           &trans              &trans          &kp DEL
 &kp TAB          &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6           &kp ASTERISK             &trans                     &trans  &kp NUMBER_9   &kp NUMBER_0     &kp LA(LEFT_ARROW)  &kp UP_ARROW    &trans
-&kp LSHFT        &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp KP_DOT               &kp KP_DOT                 &trans  &kp SEMICOLON  &kp LA(LC(TAB))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LSHFT        &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp PERIOD               &trans                     &trans  &kp SEMICOLON  &kp LA(LC(TAB))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
 &mt LCTRL SLASH  &trans        &kp LG(LA(NUMBER_3))  &mt LEFT_ALT ASTERISK  &lt 5 SPACE              &mt LEFT_WIN NUMBER_0      &trans  &trans                                                              &trans
             >;
         };
