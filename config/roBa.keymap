@@ -110,6 +110,8 @@
 &kp LSHFT        &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp PERIOD               &trans                     &trans  &kp SEMICOLON  &kp LA(LC(TAB))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
 &mt LCTRL SLASH  &trans        &kp LG(LA(NUMBER_3))  &mt LEFT_ALT ASTERISK  &lt 5 SPACE              &mt LEFT_WIN NUMBER_0      &trans  &trans                                                              &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp SQT LS(SQT)>;
         };
 
         ARROW {
