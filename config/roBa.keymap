@@ -7,7 +7,7 @@
 
 &mt {
     tapping-term-ms = <100>;
-    flavor = "balanced";
+    flavor = "hold-preferred";
     quick-tap-ms = <0>;
 };
 
