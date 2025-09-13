@@ -79,16 +79,18 @@
             tap-ms = <20>;
         };
         // Ctrl/Shift 用（Hold優先）
-        mt_hold: mt_tap_hold {
+        mt_hold: mt_hold {
             compatible = "zmk,behavior-mod-tap";
             #binding-cells = <2>;
+            bindings = <&kp>,<&kp>
             tapping-term-ms = <250>;
             flavor = "hold-preferred";
         };
 
         // Alt/Win 用（Tap優先）
-        mt_tap: mt_tap_tap {
+        mt_tap: mt_tap {
             compatible = "zmk,behavior-mod-tap";
+            bindings = <&kp>,<&kp>
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
