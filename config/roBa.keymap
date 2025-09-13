@@ -69,36 +69,29 @@
     };
 
     behaviors {
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            // 追加: スクロールのタップ時間を設定 (20ms)
-
-            tap-ms = <20>;
-        };
-
-        // Ctrl/Shift用
-
-        mt_hold: mt_hold {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_HOLD";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "hold-preferred";
-        };
-
-        // Win/Altなどその他用
-
-        mt_tap: mt_tap {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-        };
+    scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        tap-ms = <20>;
     };
+
+    mt_hold: mt_hold {
+        compatible = "zmk,behavior-mod-tap";
+        label = "MT_HOLD";
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        flavor = "hold-preferred";
+    };
+
+    mt_tap: mt_tap {
+        compatible = "zmk,behavior-mod-tap";
+        label = "MT_TAP";
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        flavor = "tap-preferred";
+    };
+};
 
     keymap {
         compatible = "zmk,keymap";
