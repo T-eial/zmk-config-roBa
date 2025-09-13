@@ -75,10 +75,28 @@
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
-
             tap-ms = <20>;
         };
+
+        // Ctrl/Shift用
+        mt_hold: mt_hold {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_HOLD";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "hold-preferred";
+        };
+
+        // Win/Altなどその他用
+        mt_tap: mt_tap {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+        };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
