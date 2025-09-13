@@ -77,7 +77,7 @@
     };
 
     // Ctrl/Shift 用（hold優先）
-    mt_hold: mod_tap_hold {
+    mt_hold: mt_hold {
       compatible = "zmk,behavior-mod-tap";
       #binding-cells = <2>;
       label = "MT_HOLD";
@@ -86,7 +86,7 @@
     };
 
     // その他用（tap優先）
-    mt_tap: mod_tap_tap {
+    mt_tap: mt_tap {
       compatible = "zmk,behavior-mod-tap";
       #binding-cells = <2>;
       label = "MT_TAP";
