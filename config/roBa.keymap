@@ -36,6 +36,11 @@
             bindings = <&kp LS(LG(S))>;
             key-positions = <39 40>;
         };
+
+        Click {
+            bindings = <&mkp MB1>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -127,10 +132,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans        &mkp MB1  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &mkp MB3      &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp MB2  &trans  &trans  &mkp MB1      &trans    &trans                          &trans
+&trans  &trans  &trans    &trans  &trans                        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &mkp MB3      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp MB2  &trans  &trans  &mkp MB1      &trans  &trans                          &trans
             >;
         };
 
