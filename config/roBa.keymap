@@ -40,7 +40,7 @@
 
         Click {
             bindings = <&mkp MB1>;
-            key-positions = <9 20>;
+            key-positions = <32 31>;
         };
 
         esc {
