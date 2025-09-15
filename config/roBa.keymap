@@ -15,18 +15,19 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
-arrows {
-    layers = <3>;
-    bindings =
-        <&kp LALT(RIGHT_ARROW)>,
-        <&kp LALT(LEFT_ARROW)>,
-        <&kp LALT(UP_ARROW)>,
-        <&kp LALT(DOWN_ARROW)>;
 
-    tick = <30>;      // リピート間隔（大きいほどゆっくり）
-    wait-ms = <200>;  // 押下後リピートが始まるまでの待機時間
-    tap-ms = <150>;   // タップ判定のしきい値
-};
+    arrows {
+        layers = <3>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
