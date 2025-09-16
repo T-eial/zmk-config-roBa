@@ -18,7 +18,7 @@
     arrows {
         layers = <3>;
         bindings =
-            <&kp RIGHT_ARROW>,
+            <&kp LA(RIGHT_ARROW)>,
             <&kp LEFT_ARROW>,
             <&kp UP_ARROW>,
             <&kp DOWN_ARROW>;
