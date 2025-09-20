@@ -42,16 +42,6 @@
             bindings = <&mkp MB1>;
             key-positions = <32 31>;
         };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <41 42>;
-        };
-
-        GraveWithAlt {
-            bindings = <&kp LA(GRAVE)>;
-            key-positions = <38 41>;
-        };
     };
 
     macros {
@@ -92,7 +82,7 @@
         alt_grave: alt_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp GRAVE &none>;
+            bindings = <&mt LEFT_ALT LEFT_ALT &kp GRAVE>;
             label = "ALT_GRAVE";
             wait-ms = <0>;
             tap-ms = <5>;
