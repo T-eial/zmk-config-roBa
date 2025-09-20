@@ -67,20 +67,35 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp I &kp A &kp L &kp N6 &kp S &kp O &kp C &kp C &kp E &kp R &kp F &kp R &kp I &kp E &kp N &kp D &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "M1";
+            wait-ms = <0>;
+            tap-ms = <5>;
         };
 
         M2: M2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp T &kp S &kp U &kp J &kp I &kp T &kp A &kp AT &kp C &kp H &kp K &kp L &kp A &kp B &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp T &kp S &kp U &kp J &kp I &kp T &kp A &kp AT &kp C &kp H &kp K &kp L &kp A &kp B &kp DOT &kp C &kp O &kp M>;
             label = "M2";
+            wait-ms = <0>;
+            tap-ms = <5>;
         };
 
         M3: M3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp S &kp U &kp J &kp I &kp T &kp A &kp N1 &kp N8 &kp ENTER>;
+            bindings = <&kp LS(T) &kp S &kp U &kp J &kp I &kp T &kp A &kp N1 &kp N8 &kp ENTER>;
             label = "M3";
+            wait-ms = <0>;
+            tap-ms = <5>;
+        };
+
+        alt_grave: alt_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp GRAVE &none>;
+            label = "ALT_GRAVE";
+            wait-ms = <0>;
+            tap-ms = <5>;
         };
     };
 
@@ -137,7 +152,7 @@
 
         NUM {
             bindings = <
-&kp LA(GRAVE)             &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9              &kp LG(LS(RIGHT_ARROW))                            &trans        &trans           &trans              &trans          &kp DEL
+&alt_grave                &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9              &kp LG(LS(RIGHT_ARROW))                            &trans        &trans           &trans              &trans          &kp DEL
 &kp TAB                   &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6              &kp ASTERISK             &trans            &trans  &kp NUMBER_9  &kp NUMBER_0     &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(GRAVE)
 &kp LSHFT                 &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3              &kp KP_DOT               &trans            &trans  &trans        &kp LA(LC(TAB))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
 &mt_hold LCTRL KP_DIVIDE  &trans        &kp LG(LA(NUMBER_3))  &mt LEFT_ALT KP_ASTERISK  &lt 5 SPACE              &kp NUMBER_0      &trans  &trans                                                             &kp RIGHT_WIN
