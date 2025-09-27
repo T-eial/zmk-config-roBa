@@ -42,6 +42,11 @@
             bindings = <&mkp MB1>;
             key-positions = <32 31>;
         };
+
+        ALT_Tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <10 37>;
+        };
     };
 
     macros {
@@ -122,7 +127,7 @@
 
         default_layer {
             bindings = <
-&mt LEFT_WIN TAB             &kp W              &kp E      &kp R         &kp T                                                  &kp Y        &kp U  &kp I  &kp O                &kp MINUS
+&mt LEFT_WIN ESCAPE          &kp W              &kp E      &kp R         &kp T                                                  &kp Y        &kp U  &kp I  &kp O                &kp MINUS
 &kp A                        &kp S              &kp D      &kp F         &kp G        &kp SINGLE_QUOTE      &lt 6 SEMICOLON     &kp H        &kp J  &kp K  &kp L                &kp P
 &mt_hold LEFT_SHIFT X        &kp Z              &kp C      &kp V         &kp B        &kp Q                 &kp COMMA           &kp PERIOD   &kp N  &kp M  &lt 3 K_APPLICATION  &kp BACKSPACE
 &mt_hold LCTRL LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &kp LEFT_ALT  &lt 5 SPACE  &kp F10               &mt LEFT_WIN EQUAL  &lt 2 ENTER                                     &lt 5 SLASH
@@ -144,7 +149,7 @@
             bindings = <
 &kp RS(CAPS)              &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9              &kp LG(LS(RIGHT_ARROW))                            &trans        &trans           &trans              &trans          &kp DEL
 &kp TAB                   &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6              &kp ASTERISK             &trans            &trans  &kp NUMBER_9  &kp NUMBER_0     &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(GRAVE)
-&kp LSHFT                 &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3              &kp KP_DOT               &trans            &trans  &trans        &kp LA(LC(TAB))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LSHFT                 &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3              &kp COMMA                &trans            &trans  &trans        &kp LA(LC(TAB))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
 &mt_hold LCTRL KP_DIVIDE  &trans        &kp LG(LA(NUMBER_3))  &mt LEFT_ALT KP_ASTERISK  &lt 5 SPACE              &kp NUMBER_0      &trans  &trans                                                             &kp RIGHT_WIN
             >;
 
